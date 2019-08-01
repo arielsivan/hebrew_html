@@ -1,5 +1,5 @@
 //import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.esm.browser.js';
-//42/113
+//43/113
 var com = [//components
     {
         name:'Hקו',
@@ -15,17 +15,12 @@ var com = [//components
         template:`<button v-if="מוסתר!='כן'":id="תז" :class="מחלקה" :title="כותרת" :onclick="לחיצה"><slot></slot></button>`,
     },
     {
-        name:'Hתסריט',
-        props:['כתובת'],
-        template:`<script :src="כתובת"><slot></slot></script>`,
+        name:'Hעיצוב',
+        template:`<style ><slot></slot></style>`,
     },
     {
         name:'Hאיןתסריט',
         template:`<noscript><slot></slot></noscript>`,
-    },
-    {
-        name:'Hעיצוב',
-        template:`<style ><slot></slot></style>`,
     },
     {
         name:'Hכתובתעיצוב',
@@ -201,6 +196,3 @@ for(let i = 0;i<com.length;i++){
 }
 
 new Vue({ el: '.htmlHB' })
-/*
-//מעוצב                 <Hתסריט קוד="עב.הודעה();
-"></Hתסריט>*/
